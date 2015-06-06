@@ -1,0 +1,583 @@
+/* --------- Reset css --------- */
+* {
+  margin : 0;
+  padding : 0;
+}
+
+/* --------- Layout --------- */
+html, body {	
+	margin : 0;
+	background: #FFFFFF url("../img/img01.gif") repeat-x;
+	padding : 0;	
+	color: #666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#xo-canvas {}
+#xo-canvas-content {
+  width : 980px;
+  margin : 0 auto;
+}
+#xo-page {padding-top : 5px;}
+
+/* --------- Hypertext links --------- */
+a {  
+  color : #D56E22;
+	text-decoration : none;
+	border-bottom : 1px dotted #ccc;	 
+}
+a:hover {border-bottom: none;}
+
+/* --------- Titles --------- */
+h1 {
+  font-size : 1.4em;
+  font-weight : bold;
+}
+h2 {font-size : 1.2em;}
+h3 {
+  padding-bottom : 3px;
+  font-size : 1em;  
+}
+h4 {font-size : 1em;}
+h5 {font-size : .9em;}
+h6 {font-size : .8em;}
+
+/* --------- Images --------- */
+img {
+  position : relative;
+  border : 0;  
+}
+
+/* --------- Lists --------- */
+#xo-canvas-content ul {
+  margin : 2px;
+  padding : 2px;
+  list-style : decimal inside;
+  text-align : left;
+}
+#xo-canvas-content li {
+  margin-left : 2px;
+  background-color : inherit;
+  color : #D56E22;
+  line-height : 1.4em;
+  list-style :	disc inside;
+}
+
+/* --------- Forms --------- */
+fieldset {
+	margin : 0 0 1em 0;
+	padding : 1em;
+	border : 1px solid #ddd;
+}
+legend {
+  padding : 0 3px 0 3px;
+  color : #444;
+	font-size : .9em;
+	font-weight : bold;
+}
+label {font-weight : bold;}
+input {
+  margin-right : 3px;
+  background-color : #fafafa;
+  padding : 1px;
+	font-size : 1em;
+	border : 1px solid #f2f2f2;
+}
+select {
+  background-color :	#fafafa;
+	color : #000;
+	border : 1px solid #f2f2f2;
+	font-size : .9em;
+}
+textarea {
+	width :  85%;
+	height : 110px;
+	margin : 0.5em 0.5em 0.5em 0;	
+	padding : 5px;
+	color : #000;
+	border : 1px solid #ccc;
+	overflow : auto;
+}
+
+/* --------- Others --------- */
+acronym, abbr, dfn {
+  border-bottom : 1px dotted #333;
+  cursor : help;
+}
+q, cite, em, dfn, strong {font-style : italic;}
+strong, dfn {font-weight : bold;}
+del {text-decoration : line-through;}
+address {
+  font-style : normal;
+  letter-spacing : .1em;
+}
+hr {display : none;}
+
+/* ---------  Show class --------- */
+.clear {
+  clear : both;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.clearleft{
+  clear : left;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.clearright{
+  clear : right;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.block {display : block;}
+.hide {display : none;}
+.spacer {padding : 0 0 3px 0;}
+.floatleft {
+	float : left;
+	margin-top : 1em;
+	margin-right : 1em;
+	padding-left : 4px;
+	border : 0;
+}
+.floatright {
+	float : right;
+	margin-bottom : 1em;
+	margin-left : 1em;
+	padding : 2px;
+	border : 0;
+}
+
+/* --------- Font class --------- */
+.extrasmall {font-size : .7em;}
+.small {font-size : .9em;}
+.normal {font-size : 1em;}
+.big {font-size : 1.2em;}
+.maxi {font-size : 1.5em;}
+
+.bold {font-weight : bold;}
+.italic {font-style : italic;}
+.underline {text-decoration : underline;}
+
+/* --------- Header --------- */
+#xo-header {
+	width : 980px;
+	height : 88px;
+	margin : 0 auto;
+	padding : 0 10px;
+}
+/* Logo and Slogan */
+#xo-header h1, #xo-header p {
+	float : left;
+	margin : 0;
+	color : #f9f9f9;
+}
+#xo-header h1 {
+	padding : 25px 0 0 0;
+	font-size : 3em;
+}
+#xo-header p {padding : 47px 0 0 3px;}
+#xo-header a {
+  color : #f9f9f9;	
+	text-decoration : none;
+  border : none;	
+}
+/* Banner */
+#xo-header .banner {
+  position : relative;
+  float : right;
+  top : 20px;
+  right : 50px;  
+}
+/* Navigation menu */
+#xo-globalnav {
+	width : 980px;
+	height : 32px;
+	margin : 0 auto;
+	padding : 0 10px;
+}
+#xo-globalnav ul {
+	margin : 0;
+	padding : 0;
+	list-style : none;
+}
+#xo-globalnav li {display : inline;}
+#xo-globalnav a {
+	display: block;
+	float : left;
+	height : 22px;
+	margin : 0 1px 0 0;
+	padding : 10px 15px 0 15px;	
+	color : #f9f9f9;
+	text-decoration : none;
+	font-size : 12px;
+	font-weight : bold;	
+	border : none;
+}
+#xo-globalnav a:hover {background : #DD8B4E;}
+#xo-globalnav .active a, #xo-globalnav a:active, #xo-globalnav a:focus {
+	background : url("../img/img02.gif") repeat-x;
+	color : #D56E22;
+}
+
+/* --------- Breadcrumbs --------- */
+#xo-breadcrumbs {
+  margin : 0 5px 0 5px;
+  padding : 3px 3px 3px 5px;
+  font-size : .85em;
+}
+
+/* --------- Left columns --------- */
+#xo-canvas-leftcolumn {
+  width : 175px;
+  padding : 20px 10px 0 0;
+  border-right : 1px solid #F2F2F2;
+}
+#xo-canvas-leftcolumn h3.xo-blocktitle {
+  margin: 0 0 10px 0;
+  background : url("../img/img02.gif") repeat-x; 
+  padding : 5px 10px;
+  text-align : center;	
+	font-size : 12px;
+	border : 1px solid #F2F2F2;
+}
+#xo-canvas-leftcolumn .xo-blockcontent {
+  margin-bottom : 10px;
+  padding : 3px;
+  line-height : 1.2em;
+}
+
+/* --------- Right columns --------- */
+#xo-canvas-rightcolumn {
+  width : 175px;
+  padding : 20px 10px 0 10px;
+  border-right : 1px solid #F2F2F2;
+}
+#xo-canvas-rightcolumn h3.xo-blocktitle {
+  margin : 0 0 10px 0;
+  background : url("../img/img02.gif") repeat-x; 
+  padding : 5px 10px;
+  text-align : center;	
+	font-size : 12px;
+	border : 1px solid #F2F2F2;
+}
+#xo-canvas-rightcolumn .xo-blockcontent {
+  margin-bottom : 10px;
+  padding : 3px;
+  line-height : 1.2em;
+}
+
+/* --------- Center blocks --------- */
+#xo-page .xo-block {margin-top : 10px;}
+#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-topcenterblocks h3.xo-blocktitle, #xo-bottomcenterblocks h3.xo-blocktitle {
+  margin : 5px;
+  padding-left : 10px;
+  color : #D56E22;
+  font-size : 16px;
+  font-weight : bold;
+  border-bottom : 1px solid #F2F2F2;
+}
+#xo-topcenterblocks .xo-blockcontent, #xo-bottomcenterblocks .xo-blockcontent {
+  padding : 5px 8px 8px 8px;
+  margin-bottom : 2px;
+  line-height : 1.5em;
+  text-align :justify;
+}
+#xo-topleftblocks, #xo-bottomleftblocks, #xo-toprightblocks, #xo-bottomrightblocks {width : 49.5%;}
+#xo-topleftblocks h3.xo-blocktitle, #xo-bottomleftblocks h3.xo-blocktitle,
+#xo-toprightblocks h3.xo-blocktitle, #xo-bottomrightblocks h3.xo-blocktitle{
+  margin : 5px;
+  padding-left : 10px;
+  color : #D56E22;
+  font-size : 16px;
+  font-weight : bold;
+  border-bottom : 1px solid #F2F2F2;
+}
+#xo-topleftblocks .xo-blockcontent, #xo-toprightblocks .xo-blockcontent,
+#xo-bottomleftblocks .xo-blockcontent, #xo-bottomrightblocks .xo-blockcontent {
+  margin-bottom : 2px;
+  padding : 5px 8px 8px 8px;
+  line-height : 1.5em;
+  text-align : justify;  
+}
+
+/* --------- Content module page --------- */
+#xo-content {
+  padding : 8px;
+  text-align : justify;  
+}
+
+/* --------- Footer --------- */
+#xo-footer {
+  background: #D56E23 url("../img/img05.gif") repeat-x;
+	padding: 30px 0 50px 0;	
+}
+#xo-footer p {
+	margin: 0;
+	color: #f9f9f9;
+	text-align: center;
+	font-size: smaller;	
+}
+#xo-footer a {color: #f9f9f9;}
+#xo-logger-output{font-size : .9em;}
+
+/* --------- Redirect page (system_redirect.html) --------- */
+#xo-redirect {
+  margin : 10px 80px 10px 80px;
+  background-color : #fafafa;
+  padding : 8px;
+  line-height : 1.4em;
+  text-align : center;
+  border : 1px solid #f2f2f2;
+}
+/* --------- Site closed page (system_siteclosed.html) --------- */
+#xo-siteclosed {
+  margin : 10px 200px 10px 200px;
+  background-color : #fff;
+  padding : 8px;
+  line-height : 1.6em;
+  text-align: center;
+  border : 1px solid #f2f2f2;
+}
+#xo-siteclosed strong {
+  display : block;
+  font-style : normal;
+}
+#xo-siteclosed label {
+  font-size : .9em;
+  font-weight : normal;
+}
+#xo-siteclosed input {margin : 2px;}
+
+/* --------- Block main menu --------- */
+#mainmenu {font-size : 1em;}
+#mainmenu a {
+  display : block;
+  margin : 0;  
+  background : url("../img/img04.gif") no-repeat left;
+  padding : 5px;
+  border-bottom : 1px dotted #ccc;
+}
+#mainmenu a:hover {
+  background-color : #fff;
+  color : #666;
+}
+#mainmenu a.menuTop {padding-left : 12px;}
+#mainmenu a.menuMain {padding-left : 12px;}
+#mainmenu a.menuSub {  
+  background: none;
+  padding-left : 12px;
+  font-size : .9em;
+  font-style : italic;
+}
+#mainmenu a.menuSub:hover {}
+
+/* --------- Block user menu --------- */
+#usermenu {font-size : 1em;}
+#usermenu a {
+  display : block;
+  margin : 0;   
+  padding : 3px;
+  border : none;
+}
+#usermenu a:hover {
+  padding-left : 12px;
+  color : #666;
+  font-style : italic;
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {background-color : #fcc;}
+
+/* --------- Tables and cells --------- */
+table {width : 100%;}
+table td {
+  padding : 0;
+  vertical-align : top;
+  border-width : 0;  
+}
+th {
+  background-color : #D56E23;
+  padding : 2px;
+  color : #fff;  
+  vertical-align : middle;
+}
+th a {color : #f9f9f9;}
+.outer {}
+.head {
+  background: url("../img/img02.gif") repeat-x top;
+  padding : 5px;
+  font-weight : bold;
+}
+.even {
+  background-color : #fff;
+  padding : 5px;
+}
+.odd {
+  background-color : #fff;
+  padding : 5px;
+}
+.foot {
+  background-color : #f2f2f2;
+  padding : 5px;
+  font-weight : bold;
+}
+tr.even td {
+  background-color : #fff;
+  padding : 5px;
+}
+tr.odd td {
+  background-color : #fff;
+  padding : 5px;
+}
+
+/* --------- Core messages --------- */
+.errorMsg {
+  background-color : #FFCCCC;
+  padding : 10px;
+  text-align : center;
+  border-top : 1px solid #DDDDFF;
+  border-left : 1px solid #DDDDFF;
+  border-right : 1px solid #aaa;
+  border-bottom : 1px solid #aaa;
+  font-weight : bold;  
+}
+.confirmMsg {
+  background-color : #DDFFDF;
+  padding : 10px;
+  color : #136C99;  
+  text-align : center;
+  font-weight : bold; 
+  border-top : 1px solid #DDDDFF;
+  border-left : 1px solid #DDDDFF;
+  border-right : 1px solid #aaa;
+  border-bottom : 1px solid #aaa;   
+}
+.resultMsg {
+  background-color : #c1c1c1;
+  padding : 10px;
+  color : #333;
+  text-align : center;
+  font-weight : bold;
+  border-top : 1px solid #ccc;
+  border-left : 1px solid #ccc;  
+  border-right : 1px solid #666;
+  border-bottom : 1px solid #666;  
+}
+
+/* --------- Codes and Quotes --------- */
+.xoopsCode {
+  max-height : 200px;
+  margin : 6px;
+  background-color : #fafafa;
+  padding : 6px; 
+  overflow : auto;
+  color : #666;
+  font-family : "Lucida Console", "courier new", monospace;
+  font-size : .9em; 
+  border : 1px solid #e1e1e1;
+  border-left : 3px solid #D56E22; 
+}
+.xoopsQuote {
+  margin : 6px;
+  background: #fafafa url("../img/quote.gif") no-repeat 5px 10px;  
+  padding : 6px 6px 6px 40px;  
+  font-style : italic;
+  border : 1px solid #e1e1e1;
+  border-left : 3px solid #D56E22; 
+}
+
+/* --------- Articles --------- */
+.item {margin-bottom : 10px;}
+.itemHead {
+  margin : 5px;
+  padding-left : 10px;
+  color : #D56E22;
+  font-size : 16px;
+  font-weight : bold;
+  border-bottom : 1px solid #F2F2F2;
+}
+.itemInfo {
+  padding : 3px;
+  text-align : right; 
+}
+.itemTitle a {
+  background-color : transparent;
+  color : #D56E22;
+  font-size : 16px;
+  font-weight : bold;
+  border : none;
+}
+.itemPoster {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemPostDate {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemStats {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemBody {padding-left : 3px;}
+.itemText {
+  margin-top : 5px;
+  margin-bottom : 5px;
+  padding : 0 5px 0 5px;
+  line-height : 1.6em;
+}
+.itemFoot {
+  padding : 3px;
+  text-align : right; 
+}
+.itemAdminLink {font-size : .9em;}
+.itemPermaLink {font-size : .9em;}
+
+/* --------- Forums and Comments --------- */
+.comTitle {
+  margin-bottom : 2px;
+  font-weight : bold;  
+}
+.comText {padding : 2px;}
+.comUserStat {
+  margin : 2px; 
+  background-color : #fff;
+  padding : 2px;  
+  color : #666;
+  font-size : .8em;
+  font-weight : bold;
+  border : 1px solid #ccc;   
+}
+.comUserStatCaption {font-weight : normal;}
+.comUserStatus {
+  margin-left : 2px;
+  margin-top : 10px;
+  color : #666;
+  font-weight : bold;
+  font-size : .8em;
+}
+.comUserRank {margin : 2px;}
+.comUserRankText {
+  font-size : .8em;
+  font-weight : bold;
+}
+.comUserRankImg {border : 0;}
+.comUserName {}
+.comUserImg {margin : 2px;}
+.comDate {
+  font-weight : normal;
+  font-style : italic;
+  font-size : .8em;
+}  
+.comDateCaption {
+  font-weight : bold;
+  font-style : normal;
+  font-size : .9em;
+}
+.signature {
+  font-size : .8em;
+  font-style : italic;
+}
